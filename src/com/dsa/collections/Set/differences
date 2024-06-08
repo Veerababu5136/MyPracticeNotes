@@ -1,0 +1,55 @@
+differences between list,set
+
+- Lists allow duplicate elements, while sets do not allow duplicate elements.
+
+- Elements in lists are ordered and can be accessed by index, whereas elements in sets are not ordered (except for LinkedHashSet) and cannot be accessed by index.
+
+- Implementations of lists include ArrayList, LinkedList, and Vector, while implementations of sets include HashSet, TreeSet, and LinkedHashSet.
+
+- Lists are commonly used when elements need to be stored in a specific sequence, whereas sets are preferred when uniqueness of elements is important and order is not relevant.
+
+- Operations such as add, get, set, remove, and iteration are commonly performed on lists, while operations such as add, remove, contains, and iteration are common for sets.
+
+differences between HashSet,TreeSet,LinkedHashSet
+
+
+- HashSet:
+
+  - Does not allow duplicate elements.
+  
+  - Elements are not ordered and cannot be accessed by index.
+  
+  - Uses hashing mechanism to store elements.
+  
+  - Provides constant-time performance for basic operations (add, remove, contains).
+  
+  - Implementation does not guarantee the order of elements.
+
+
+
+- TreeSet:
+
+  - Does not allow duplicate elements.
+  
+  - Elements are sorted in natural order or according to a comparator provided at the time of creation.
+  
+  - Provides performance logarithmic time cost for basic operations (add, remove, contains).
+  
+  - Suitable for scenarios where elements need to be sorted.
+  
+  - Implementation maintains the elements in sorted order.
+
+
+
+
+- LinkedHashSet:
+
+  - Does not allow duplicate elements.
+  
+  - Maintains the insertion order of elements.
+  
+  - Provides constant-time performance for basic operations (add, remove, contains).
+  
+  - Implemented as a hash table with a linked list running through it, hence providing the insertion-order iteration.
+  
+  - Suitable for scenarios where both uniqueness and insertion order of elements are important.
